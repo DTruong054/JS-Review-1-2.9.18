@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JS Review 1</title>
+</head>
+<!-- Create three parallel arrays. One which holds the names of a total of 10 employees. One which holds the number of hours each
+employee worked in a given week. The last array should hold the dollar amounts for the salaries (dollar per hour) of the
+employees. 
+
+Build a for loop which calculates the pay for each of the employees for the week. Your output should produce 1
+employee per line, stating “Employee _ _ _ name _ _ _ worked _ _ _ hours during the previous week, for a total of _ _ _ dollars
+at _ _ _ dollars per hour.” -->
+<body>
+    <script type="text/javascript">
+        var emp = ["Altera", "Ryougi", "Atalante", "Ereshkigal", "Diarmuid", "Paracelsus", "Tamamo", "Zhuge", "Ozymandias", "Enkidu"];
+        var hrs = ["35", "40", "20", "30", "5", "40", "5", "40", "25", "35"];
+        var cash = ["12", "14", "12", "10", "10", "24", "16", "30", "26", "24"];
+
+        for (i = 0; i < 10; i++) {
+            document.write("Employee " + emp[i] + " " + "worked " + hrs[i] + " " + "hours during the previous week, for a total of " + (hrs[i] * cash[i]) + " " + "dollars at " + cash[i] + " " + "per hour. " + "<br />");
+        }
+    </script>
+</body>
+
+</html>
